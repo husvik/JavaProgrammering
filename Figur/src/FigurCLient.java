@@ -1,7 +1,10 @@
 /**
+ * FigurClient.java
+ *
+ * objekter av figurer i en tabell, se om polymorfien virker
  * Created by husvi on 07.03.2017.
  */
-public class FigurCLient {
+public class FigurClient {
     public static void main(String[] args) {
         Sirkel a = new Sirkel(2);
         Trekant b = new Trekant(3,3);

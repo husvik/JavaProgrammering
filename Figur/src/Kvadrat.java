@@ -1,4 +1,7 @@
 /**
+ * Areal.java
+ *
+ *
  * Areal = side*side
  */
 public class Kvadrat extends Figur {
