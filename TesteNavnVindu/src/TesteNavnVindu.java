@@ -1,6 +1,7 @@
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
+/*
+* TesteNavnVindu.java
+* skriver ut objektet fra klassen NavneVindu.
+* */
 
 public class TesteNavnVindu {
     public static void main(String[] args) {

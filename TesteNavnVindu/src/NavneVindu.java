@@ -2,9 +2,15 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ * NavneVindu.java
+ * Inneholder:
+ */
+/
+
 class NavneVindu extends JFrame {
     private JTextField navnefelt = new JTextField(20);
-    private JLabel hilsen = new JLabel("Her kommer det en hilsen");
+    private JLabel hilsen = new JLabel("Her kommer det en liten hilsen");
 
     public NavneVindu (String tittel){
         setTitle(tittel);
