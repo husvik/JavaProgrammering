@@ -6,7 +6,6 @@ import java.awt.event.*;
  * NavneVindu.java
  * Inneholder:
  */
-/
 
 class NavneVindu extends JFrame {
     private JTextField navnefelt = new JTextField(20);
