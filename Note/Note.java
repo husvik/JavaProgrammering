@@ -4,23 +4,17 @@ import java.awt.event.*;
 
 public class Note extends JFrame implements ActionListener {
     JLabel hilsen = new JLabel("her kommer valget ditt frem");
+    JButton btnSave = new JButton("Lagre");
+    JButton btnLoad = new JButton("Hent");
     public Note(){
         setTitle("Tommy");
-     
         add(new JPanel(), BorderLayout.CENTER);
-        
         add(hilsen);
-        /*JPanel pnlNorth = new JPanel(new FlowLayout());
-        JLabel hilsen = new JLabel("her kommer valget ditt frem");
-        pnlNorth.add(hilsen);
-        add(pnlNorth, BorderLayout.NORTH);
-        */
         JPanel pnlSouth = new JPanel(new GridLayout(1,3));
-        JButton btnSave = new JButton("Lagre");
         btnSave.setBackground(Color.GREEN);
         pnlSouth.add(btnSave);
-        JButton btnLoad = new JButton("Hent");
         pnlSouth.add(btnLoad);
+        btnLoad.setBackground(Color.CYAN);
         JButton btnExit = new JButton("Avslutt");
         btnExit.setBackground(Color.RED);
         pnlSouth.add(btnExit);
@@ -31,10 +25,8 @@ public class Note extends JFrame implements ActionListener {
         setSize(400, 200);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
 
     }
-
     public void actionPerformed(ActionEvent event) {
         String text = event.getActionCommand();
         if (text.equals("Avslutt")){
@@ -44,11 +36,20 @@ public class Note extends JFrame implements ActionListener {
         }else if (text.equals("Hent")){
             System.out.println("Henter..");
             hilsen.setText("Du valgte å hente");
+            if(btnLoad.getBackground()==Color.CYAN){
+                btnLoad.setBackground(Color.PINK);
+            } else {
+                btnLoad.setBackground(Color.CYAN);
+            }
         }else {
             System.out.println("Lagrer");
             hilsen.setText("Du valgte å lagre");
-            
+            if(btnSave.getBackground()==Color.GREEN){
+                btnSave.setBackground(Color.YELLOW);
+            } else {
+                btnSave.setBackground(Color.GREEN);
+            }
         }
-       
+
     }
 }
