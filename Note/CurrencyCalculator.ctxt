@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CurrencyCalculator()
+comment1.params=
+comment1.target=void\ getValueSubstract()
+comment2.params=
+comment2.target=void\ getValueMultiplication()
+comment3.params=currency
+comment3.target=void\ setCurrency(double)
+comment4.params=
+comment4.target=void\ checkLegal()
+numComments=5
